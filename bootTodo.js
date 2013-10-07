@@ -25,6 +25,12 @@ $(document).ready(function() {
 		updater();
   });
 	
+	$('.todo-list').on('dblclick', 'li', function() {
+		var oldtext = $(this).text();
+		$(this).find('button').remove();
+		$(this).replaceWith('<input id="new-todo" placeholder=' + oldtext + ' autofocus>');
+	});
+	
 	$('#header').on( 'click', 'input.select-all', function() {
 		if($('li.not-done').length > 0){
     	$('li').addClass('done')
