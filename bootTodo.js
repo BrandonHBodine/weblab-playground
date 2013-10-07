@@ -1,13 +1,10 @@
 $(document).ready(function() {
 	var updater = function() {
 		var count = $('li.not-done').length;
-		if(count > 0) {
-			$('#todo-count').prepend(count);
-		} else {
-			$('#todo-count').remove('h2');
-		}
-	};
-	
+			$('#todo-count').find('span').remove();
+			$('#todo-count').prepend('<span>' + count + ' ' + '</span>');
+		};
+		
 	$('#new-todo').keypress(function(e) {
     if(e.which == 13) {
 			var text = $('#new-todo').val();
