@@ -1,3 +1,7 @@
 .done {
 	text-decoration:line-through;
 }
+
+.not-done{
+	font-size:30px;
+}
