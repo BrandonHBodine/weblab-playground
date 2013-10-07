@@ -1,25 +1,27 @@
-
 <!doctype html>
 <html lang="en" data-framework="javascript">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Todo</title>
-		<link rel="stylesheet" href="todo.css">
+		<link rel="stylesheet" href = "./dist\css\bootstrap-theme.css">
+		<link rel="stylesheet" href = "./dist\css\bootstrap.css">
+		<link rel="stylesheet" href="bootTodo.css">
 	</head>
 	<body>
 		<section id="todoapp">
 			<header id="header">
 				<h1>todos</h1>
+				<input class="select-all" type="button">
 				<input id="new-todo" placeholder="What needs to be done?" autofocus>
 			</header>
 				<ul class="todo-list">
 				</ul>
 			<footer id="footer">
 				<span id="todo-count"></span>
-				</footer>
+			</footer>
 		</section>
 		<script src="http://code.jquery.com/jquery-2.0.3.js"></script>
-		<script src ="./todo.js"></script>
+		<script src ="./bootTodo.js"></script>
 	</body>
 </html>
